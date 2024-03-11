@@ -43,7 +43,7 @@ This is the official implementation for Shape-aware ControlNet, which studies th
 
   | Model Architecture                                           | Performance on Deteriorated Masks                            |
   | ------------------------------------------------------------ | ------------------------------------------------------------ |
-  | <img src="./fig/network_arch_vertical_v3.png" alt="image-20240310223432847" style="zoom:80%;" /> | <img src="./fig/appendix-comparison_v2.png" alt="image-20240310223432847" style="zoom:130%;" /> |
+  | <img src="./fig/network_arch_vertical_v3.png" alt="image-20240310223432847" style="zoom:70%;" /> | <img src="./fig/appendix-comparison_v2.png" alt="image-20240310223432847" style="zoom:140%;" /> |
 
 - Applications with more flexible conditional masks including programmatic sketches, human scribbles. It also support composable shape-controllable generation. 
 
