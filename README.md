@@ -227,7 +227,7 @@ You can download the following model weights and put them in `controlnet_checkpo
 
 <img src="./fig/appendix-scribble.png" alt="image-20240311004358704" style="zoom:120%;" />
 
-2. Shape-prior modification of the generated images. The values above denotes the $\Delta p$. 
+2. Shape-prior modification of the generated images. The values above denotes the $\Delta \rho$. 
 
 <img src="./fig/appendix-prior_control_v2.png" alt="image-20240311004419592" style="zoom:120%;" />
 
