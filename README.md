@@ -43,9 +43,9 @@ This is the official implementation for Shape-aware ControlNet, which studies th
 
   | Model Architecture                                           | Performance on Deteriorated Masks                            |
   | ------------------------------------------------------------ | ------------------------------------------------------------ |
-  | <img src="./fig/network_arch_vertical_v3.png" alt="image-20240310223432847" style="zoom:70%;" /> | <img src="./fig/appendix-comparison_v2.png" alt="image-20240310223432847" style="zoom:140%;" /> |
+  | <img src="./fig/network_arch_vertical_v3.png" alt="image-20240310223432847" style="zoom:60%;" /> | <img src="./fig/appendix-comparison_v2.png" alt="image-20240310223432847" style="zoom:140%;" /> |
 
-- Applications with more flexible conditional masks including programmatic sketches, human scribbles. It also support composable shape-controllable generation. 
+- Applications with more flexible conditional masks including programmatic sketches and human scribbles. It also support composable shape-controllable generation. 
 
   | Applications          | Examples                                                     |
   | --------------------- | ------------------------------------------------------------ |
@@ -56,12 +56,12 @@ This is the official implementation for Shape-aware ControlNet, which studies th
 
 ## :hammer_and_wrench: Install
 
-**Recommended**: `Linux` `Python=3.11` `torch=2.1.2` `CUDA=12.2` `diffusers=0.25.1`
+**Recommended**:  `Python=3.11` `torch=2.1.2` `CUDA=12.2` `diffusers=0.25.1`
 
 ```shell
 # set up repository 
 git clone https://github.com/DREAMXFAR/Shape-aware-ControlNet.git
-cd Shape-aware-ControlNet
+cd Shape-aware-ControlNet-master
 
 # install conda environment 
 conda env create -f environment.yaml 
@@ -72,7 +72,7 @@ conda activate shapeaware_controlnet
 
 ## :pushpin: Checkpoints
 
-You can download the following model weights and put them in `controlnet_checkpoint/`.
+You can download the following checkpoints and put them in `controlnet_checkpoint/`.
 
 | Model                  | Baidu Yun                                                    | Key    | Notations                                                    |
 | ---------------------- | ------------------------------------------------------------ | ------ | ------------------------------------------------------------ |
@@ -110,11 +110,11 @@ You can download the following model weights and put them in `controlnet_checkpo
 3. Generate dilated masks and bounding-box images for training and test. 
 
    ```shell
-   # # generate dilated masks 
+   # generate dilated masks 
    python vis_sketch_images.py
    ```
 
-4. If you follows the provided scripts, the final dataset structure should be organized as follows. Note this setting is just for the usage of our data-loaders including `coco_offlinecond_dataset.py` and `lvis_coco.py` under `./custom_datasets/`. Remember to configure the global variables in `coco_offlinecond_dataset.py` and `lvis_coco.py`. 
+4. If you follow the provided scripts, the final dataset structure should be organized as follows. Note this is just used for our data-loaders including `coco_offlinecond_dataset.py` and `lvis_coco.py` under `./custom_datasets/`. Remember to configure the global variables in `coco_offlinecond_dataset.py` and `lvis_coco.py`. You can write your own dataloader. 
 
    ```shell
    LVIS_COCO_triplet
@@ -139,12 +139,12 @@ You can download the following model weights and put them in `controlnet_checkpo
 
 #### Training
 
-1. Download the [SD_v1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5) parameters from hugging-face and our shape-aware ControlNet checkpoints from [Baidu Yun](##:pushpin: Checkpoints). Put the SD parameters in anywhere you like and put our checkpoints under `./checkpoints`. Remember to modify the paths accordingly in `xxx`. 
+1. Download the [SD_v1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5) parameters from hugging-face and our shape-aware ControlNet checkpoints from [Baidu Yun](https://github.com/DREAMXFAR/Shape-aware-ControlNet/tree/main?tab=readme-ov-file#pushpin-checkpoints). Put the SD parameters in anywhere you like and put our checkpoints under `./checkpoints`. 
 
 2. Configure the hyper-parameters in `./train.sh` and run the scripts.  
 
    ```shell
-   # train 
+   # train the shape-aware controlnet
    sh train.sh
    ```
 
@@ -168,10 +168,10 @@ You can download the following model weights and put them in `controlnet_checkpo
 
 #### Inference
 
-1. To inference with single image, configure the `./test_single` and run the following scripts. Remember to configure the global variables in `test_controlnet.py`. 
+1. To inference with a single image, configure the `./test_single` and run the following scripts. Remember to configure the global variables in `test_controlnet.py`. 
 
    ```shell
-   # inference with shape-aware controlnet on single conditional image 
+   # inference with shape-aware controlnet on a single conditional image 
    sh test_single.sh
    ```
 
@@ -219,11 +219,8 @@ You can download the following model weights and put them in `controlnet_checkpo
 
 1. Generation with TikZ sketches and human scribbles.
 
-   > TikZ sketches
 
 <img src="./fig/appendix-sketch.png" alt="image-20240311004332553" style="zoom:120%;" align="center"/>
-
-   >  Human scribbles
 
 <img src="./fig/appendix-scribble.png" alt="image-20240311004358704" style="zoom:120%;" align="center" />
 
@@ -231,7 +228,7 @@ You can download the following model weights and put them in `controlnet_checkpo
 
 <img src="./fig/appendix-prior_control_v2.png" alt="image-20240311004419592" style="zoom:120%;" align="center"/>
 
-3. Composable shape-controllable generatio
+3. Composable shape-controllable generation
 
 <img src="./fig/appendix-multicontrol.png" alt="image-20240311004451209" style="zoom: 120%;" align="center"/>
 
