@@ -4,8 +4,6 @@
 <p align="center">
 <a href="https://arxiv.org/abs/2403.00467"><img src="https://img.shields.io/badge/arXiv-2403.00647-b31b1b.svg"></a>
 </p>
-[News](##:fire: News) | [Todo](##:round_pushpin: Todo) | [Highlight](:sparkles: Highlight) | [Introduction](##:memo: Introduction) | [Install](:hammer_and_wrench: Install) | [Checkpoints](##:pushpin: Checkpoints) | [Getting Started](:rocket: Getting Started) | [Applications](##:art: Applications) | [FAQ](##:bulb: FAQs) | [Citation](##:black_nib: Citation) 
-
 
 > Wenjie Xuan, Yufei Xu, Shanshan Zhao, Chaoyue Wang, Juhua Liu, Bo Du, Dacheng Tao
 
