@@ -219,21 +219,21 @@ You can download the following model weights and put them in `controlnet_checkpo
 
 1. Generation with TikZ sketches and human scribbles.
 
-   - TikZ sketches
+   > TikZ sketches
 
-   <img src="./fig/appendix-sketch.png" alt="image-20240311004332553" style="zoom:100%;" />
+<img src="./fig/appendix-sketch.png" alt="image-20240311004332553" style="zoom:120%;" />
 
-   - Human scribbles
+   >  Human scribbles
 
-   <img src="./fig/appendix-scribble.png" alt="image-20240311004358704" style="zoom:100%;" />
+<img src="./fig/appendix-scribble.png" alt="image-20240311004358704" style="zoom:120%;" />
 
-2. Shape-prior modification of the generated images. The values above denotes the $\delta p$. 
+2. Shape-prior modification of the generated images. The values above denotes the $\Delta p$. 
 
-   <img src="./fig/appendix-prior_control_v2.png" alt="image-20240311004419592" style="zoom:100%;" />
+<img src="./fig/appendix-prior_control_v2.png" alt="image-20240311004419592" style="zoom:120%;" />
 
-3. Composable shape-controllable generation.
+3. Composable shape-controllable generatio
 
-   <img src="./fig/appendix-multicontrol.png" alt="image-20240311004451209" style="zoom: 80%;" />
+<img src="./fig/appendix-multicontrol.png" alt="image-20240311004451209" style="zoom: 120%;" />
 
 
 
