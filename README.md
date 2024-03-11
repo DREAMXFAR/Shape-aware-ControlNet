@@ -62,6 +62,7 @@ This is the official implementation for Shape-aware ControlNet, which studies th
 # set up repository 
 git clone https://github.com/DREAMXFAR/Shape-aware-ControlNet.git
 cd Shape-aware-ControlNet
+
 # install conda environment 
 conda env create -f environment.yaml 
 conda activate shapeaware_controlnet
@@ -117,22 +118,22 @@ You can download the following model weights and put them in `controlnet_checkpo
 
    ```shell
    LVIS_COCO_triplet
-   	- train2017  # COCO train2017 images 
-   	- val2017  # COCO val2017 images 
-   	- conditional_train
-   		- epsilon_0_blackbg  # raw masks 
-   		- lvisbbox  # bounding-box masks 
-   		- dilate_5_within_bbox  # dilated masks with the radius=5
-   		- ...
-   	- conditional_val
-   		- epsilon_0_blackbg  # raw masks 
-   		- lvisbbox  # bounding-box masks 
-   		- dilate_5_within_bbox  # dilated masks with the radius=5
-   		- caption_val.jsonl  # filenames and captions (the 1st caption of each image by default)
-   		- ...
-   	- categories.jsonl  # category information 
-   	- train.jsonl  # train information 
-   	- val.jsonl  # val information
+     - train2017  # COCO train2017 images 
+     - val2017  # COCO val2017 images 
+     - conditional_train
+       - epsilon_0_blackbg  # raw masks 
+       - lvisbbox  # bounding-box masks 
+       - dilate_5_within_bbox  # dilated masks with the radius=5
+       - ...
+     - conditional_val
+       - epsilon_0_blackbg  # raw masks 
+       - lvisbbox  # bounding-box masks 
+       - dilate_5_within_bbox  # dilated masks with the radius=5
+       - caption_val.jsonl  # filenames and captions (the 1st caption of each image by default)
+       - ...
+     - categories.jsonl  # category information 
+     - train.jsonl  # train information 
+     - val.jsonl  # val information
 
 
 
@@ -220,15 +221,15 @@ You can download the following model weights and put them in `controlnet_checkpo
 
    - TikZ sketches
 
-   ![image-20240311004332553](./fig/appendix-sketch.png)
+   <img src="./fig/appendix-sketch.png" alt="image-20240311004332553" style="zoom:100%;" />
 
    - Human scribbles
 
-   ![image-20240311004358704](./fig/appendix-scribble.png)
+   <img src="./fig/appendix-scribble.png" alt="image-20240311004358704" style="zoom:100%;" />
 
 2. Shape-prior modification of the generated images. The values above denotes the $\delta p$. 
 
-   ![image-20240311004419592](./fig/appendix-prior_control_v2.png)
+   <img src="./fig/appendix-prior_control_v2.png" alt="image-20240311004419592" style="zoom:100%;" />
 
 3. Composable shape-controllable generation.
 
