@@ -43,7 +43,7 @@ This is the official implementation for Shape-aware ControlNet, which studies th
 
   | Model Architecture                                           | Performance on Deteriorated Masks                            |
   | ------------------------------------------------------------ | ------------------------------------------------------------ |
-  | <img src="./fig/network_arch_vertical_v3.png" alt="image-20240310223432847" style="zoom:80%;" /> | <img src="./fig/appendix-comparison_v2.png" alt="image-20240310223432847" style="zoom:60%;" /> |
+  | <img src="./fig/network_arch_vertical_v3.png" alt="image-20240310223432847" style="zoom:80%;" /> | <img src="./fig/appendix-comparison_v2.png" alt="image-20240310223432847" style="zoom:130%;" /> |
 
 - Applications with more flexible conditional masks including programmatic sketches, human scribbles. It also support composable shape-controllable generation. 
 
@@ -221,19 +221,19 @@ You can download the following model weights and put them in `controlnet_checkpo
 
    > TikZ sketches
 
-<img src="./fig/appendix-sketch.png" alt="image-20240311004332553" style="zoom:120%;" />
+<img src="./fig/appendix-sketch.png" alt="image-20240311004332553" style="zoom:120%;" align="center"/>
 
    >  Human scribbles
 
-<img src="./fig/appendix-scribble.png" alt="image-20240311004358704" style="zoom:120%;" />
+<img src="./fig/appendix-scribble.png" alt="image-20240311004358704" style="zoom:120%;" align="center" />
 
 2. Shape-prior modification of the generated images. The values above denotes the $\Delta \rho$. 
 
-<img src="./fig/appendix-prior_control_v2.png" alt="image-20240311004419592" style="zoom:120%;" />
+<img src="./fig/appendix-prior_control_v2.png" alt="image-20240311004419592" style="zoom:120%;" align="center"/>
 
 3. Composable shape-controllable generatio
 
-<img src="./fig/appendix-multicontrol.png" alt="image-20240311004451209" style="zoom: 120%;" />
+<img src="./fig/appendix-multicontrol.png" alt="image-20240311004451209" style="zoom: 120%;" align="center"/>
 
 
 
