@@ -7,11 +7,13 @@
 
 > Wenjie Xuan, Yufei Xu, Shanshan Zhao, Chaoyue Wang, Juhua Liu, Bo Du, Dacheng Tao
 
-This is the official implementation for Shape-aware ControlNet, which studies the contour-following ability of the influential [ControlNet](https://github.com/lllyasviel/ControlNet) by Zhang and improves its ability on dealing inexplicit masks, *i.e.*, deteriorated masks and human scribbles. Refer to our paper for more details.
+This is the official implementation for Shape-aware ControlNet, which studies the contour-following ability of the influential [ControlNet](https://github.com/lllyasviel/ControlNet) by Zhang and improves its ability on dealing inexplicit masks, *i.e.*, deteriorated masks and human scribbles. Refer to our paper for more details, which is accepted by ACM MM'2024.
 
 
 
 ## :fire: News
+
+- **[2024/07/16]**: Our work is accepted by ACM MM'2024. 
 
 - **[2024/03/12]**: Codes for training and inference are released. 
 
